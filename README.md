@@ -2,19 +2,37 @@
 
 # 🎮 Mona Mayhem
 
-**VS Code & GitHub Copilot CLI Workshop** — Build a GitHub Contribution Battle Arena
+### Turn GitHub contribution graphs into an arcade showdown.
 
-A workshop template for building a retro arcade-themed website with Astro that compares GitHub contribution graphs of two users. This is the **starting point** — you'll build the app step by step using GitHub Copilot.
+Build **Mona Mayhem**, a retro-inspired arena where two GitHub contribution histories face off. This hands-on, ~1-hour workshop takes you from starter template to a working app while you practice real GitHub Copilot workflows in **VS Code** or the **CLI**.
+
+[▶ Start the workshop](workshop/00-overview.md) · [🎯 Choose your track](#choose-your-track)
 
 ![Mona Mayhem Screenshot](https://github.com/user-attachments/assets/5eca79e2-cb9f-4e93-aa0d-23666ebde3b7)
-*What you'll build by the end of the workshop*
+*The retro arcade experience you'll build during the workshop*
 
-## 📚 Workshop
+## 🕹️ What you'll build
 
-The workshop supports two tracks — follow the one that matches your preferred workflow:
+Create a contribution battle arena with Astro, then give it an arcade-style visual identity. Along the way, you'll practice:
 
-- **VS Code track** — Chat, Plan Mode, Agent Mode, background agents, and editor-native review loops
-- **CLI track** — `copilot`, `@file` context, `/plan`, autonomous edits, `/fleet`, `/delegate`, and `/review`
+- Shaping a project with context engineering and planning
+- Building and iterating on a real app with Copilot
+- Refining the design, quality, and resilience of your work
+
+## 🎯 Choose your track
+
+Pick the workflow that feels right; both tracks follow the same workshop:
+
+- **VS Code** — Chat, Plan Mode, Agent Mode, background agents, and editor-native review loops.
+- **GitHub Copilot CLI** — `copilot`, `@file` context, `/plan`, autonomous edits, `/fleet`, `/delegate`, and `/review`.
+
+## 🚀 Get started
+
+1. Create your own repository with **Use this template** or by forking this one.
+2. Clone your new repository and open it in VS Code, or install Copilot CLI and work from your terminal.
+3. [Open the workshop overview](workshop/00-overview.md) and choose your track.
+
+## 📚 Workshop map
 
 | Part | Title | Copilot Focus |
 |------|-------|---------------|
@@ -25,16 +43,6 @@ The workshop supports two tracks — follow the one that matches your preferred 
 | [04](workshop/04-design-vibes.md) | Design-First Theming | Visual design planning and implementation |
 | [05](workshop/05-polish.md) | Polish & Parallel Work | Parallelism, reviews, and quality passes |
 | [06](workshop/06-bonus.md) | Bonus & Extensions | Open-ended feature ideas and extra Copilot experiments |
-
-## 🚀 Quick Start
-
-1. **Create your own repo first** by either:
-   - clicking **Use this template** to create a new repo, or
-   - forking this repository.
-2. Choose your workshop path:
-   - **VS Code:** clone your repo and open it in VS Code.
-   - **GitHub Copilot CLI:** clone your repo locally, install `copilot`, and work from your terminal.
-3. Follow the [workshop guide](workshop/00-overview.md)
 
 ## Prerequisites
 
