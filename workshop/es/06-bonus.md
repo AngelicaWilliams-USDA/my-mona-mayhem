@@ -1,5 +1,5 @@
 <!-- l10n-sync: source-file="workshop/06-bonus.md" -->
-# 🎉 Bonus y Extensiones
+# 🎉 Extras y ampliaciones
 
 ---
 
@@ -15,7 +15,7 @@ Usa Copilot CLI para todos estos — combina contexto con `@file`, `/plan`, modo
 
 ---
 
-## 🏆 Desafío 1: Banner de Ganador
+## 🏆 Desafío 1: Banner del ganador
 
 Después de que ambos gráficos de contribuciones carguen, compara los totales y muestra un anuncio dinámico del ganador.
 
@@ -26,28 +26,28 @@ Después de que ambos gráficos de contribuciones carguen, compara los totales y
 - Agrega animación o confeti para más efecto
 
 **Sugerencia de prompt:**
-> After both users' contribution data loads, compare total contributions and display a winner banner. Show "🏆 {username} WINS! 🏆" if one user has more contributions, or "🤝 IT'S A TIE! 🤝" if equal. Make it visually exciting with CSS animations.
+> Cuando se carguen los datos de contribuciones de ambos usuarios, compara los totales y muestra un banner con el ganador. Muestra "🏆 {username} WINS! 🏆" si un usuario tiene más contribuciones, o "🤝 IT'S A TIE! 🤝" si los totales son iguales. Dale un aspecto llamativo con animaciones CSS.
 
 ---
 
-## 🏆 Desafío 2: Contador de Racha
+## 🏆 Desafío 2: Contador de rachas
 
 Calcula y muestra la racha de contribuciones consecutivas más larga de cada usuario.
 
 **Qué construir:**
 - Analiza los datos de contribuciones día por día
 - Encuentra la serie más larga de días consecutivos con al menos una contribución
-- Muestra el conteo de la racha de forma prominente para cada usuario
+- Muestra de forma destacada la duración de la racha de cada usuario
 - Resalta quién tiene la racha más larga
 
 **Sugerencia de prompt:**
-> Add a streak counter feature that analyzes each user's contribution data to find their longest consecutive contribution streak. Display "🔥 Longest Streak: X days" for each user below their contribution graph.
+> Añade un contador de rachas que analice los datos de contribuciones de cada usuario para encontrar su racha de contribuciones consecutivas más larga. Muestra "🔥 Longest Streak: X days" para cada usuario debajo de su gráfico de contribuciones.
 
 ---
 
-## 🏆 Desafío 3: Historial de Batallas
+## 🏆 Desafío 3: Historial de batallas
 
-Persiste los resultados de las batallas para que los usuarios puedan ver sus enfrentamientos anteriores.
+Guarda los resultados de las batallas de forma persistente para que los usuarios puedan ver sus enfrentamientos anteriores.
 
 **Qué construir:**
 - Guarda cada resultado de batalla en `localStorage` (nombres de usuario, totales, ganador, marca de tiempo)
@@ -56,28 +56,28 @@ Persiste los resultados de las batallas para que los usuarios puedan ver sus enf
 - Agrega un botón "Clear History"
 
 **Sugerencia de prompt:**
-> Save battle results to localStorage after each comparison. Add a "Recent Battles" section that displays the last 10 battles with usernames, contribution totals, the winner, and when the battle happened. Include a "Clear History" button.
+> Guarda los resultados de las batallas en localStorage después de cada comparación. Añade una sección "Recent Battles" que muestre las últimas 10 batallas con los nombres de usuario, los totales de contribuciones, el ganador y cuándo tuvo lugar la batalla. Incluye un botón "Clear History".
 
 ---
 
-## 🏆 Desafío 4: Efectos de Sonido
+## 🏆 Desafío 4: Efectos de sonido
 
 Agrega efectos de sonido retro arcade usando la Web Audio API — sin necesidad de archivos externos.
 
 **Qué construir:**
 - Sonido de **insertar moneda** cuando se hace clic en el botón "Battle!"
-- Sonido de **power up** cuando los resultados cargan exitosamente
+- Sonido de **potenciador** cuando los resultados se cargan correctamente
 - Sonido de **explosión** cuando ocurre un error (usuario no encontrado, fallo de API)
 - Un botón de alternancia para silenciar/activar sonido
 
 **Sugerencia de prompt:**
-> Add retro arcade sound effects using the Web Audio API (no audio files). Play a coin insert sound on battle start, a power-up sound when results load, and an explosion sound on errors. Generate the sounds programmatically with oscillators and gain nodes. Include a mute toggle.
+> Añade efectos de sonido arcade retro con la Web Audio API (sin archivos de audio). Reproduce un sonido de inserción de moneda al iniciar la batalla, un sonido de potenciador cuando se carguen los resultados y un sonido de explosión si se produce un error. Genera los sonidos mediante código con osciladores y nodos de ganancia. Incluye un control para silenciar el sonido.
 
 ---
 
-## 🏆 Desafío 5: Secuencia de Batalla Animada
+## 🏆 Desafío 5: Secuencia de batalla animada
 
-Crea suspenso con una cuenta regresiva dramática antes de revelar los resultados.
+Crea suspense con una cuenta atrás dramática antes de revelar los resultados.
 
 **Qué construir:**
 - Cuando se haga clic en "Battle!", muestra una superposición a pantalla completa
@@ -86,26 +86,26 @@ Crea suspenso con una cuenta regresiva dramática antes de revelar los resultado
 - Usa animaciones CSS o temporización con JavaScript
 
 **Sugerencia de prompt:**
-> Add an animated battle sequence when the user clicks "Battle!". Show a countdown overlay: "3..." then "2..." then "1..." then "⚡ FIGHT! ⚡" with each step lasting about 1 second. After the countdown, reveal the results with a slide-in animation.
+> Añade una secuencia de batalla animada cuando el usuario haga clic en "Battle!". Muestra una cuenta atrás superpuesta: "3...", después "2...", después "1..." y después "⚡ FIGHT! ⚡", con una duración aproximada de 1 segundo por paso. Tras la cuenta atrás, muestra los resultados con una animación de entrada deslizante.
 
 ---
 
-## 🏆 Desafío 6: Leyenda de Contribuciones
+## 🏆 Desafío 6: Leyenda de contribuciones
 
 Agrega una leyenda de escala de colores que coincida con la paleta de colores del gráfico de contribuciones.
 
 **Qué construir:**
-- Una leyenda horizontal mostrando los niveles de intensidad de contribuciones
+- Una leyenda horizontal que muestre los niveles de intensidad de las contribuciones
 - Etiquetas desde **"Less"** hasta **"More"**
 - Usa la paleta de colores real de la respuesta de la API de contribuciones de GitHub
 - Posiciónala cerca de los gráficos de contribuciones
 
 **Sugerencia de prompt:**
-> Add a contribution legend below the graphs showing the color scale from the API's color palette. Display a row of colored squares ranging from "Less" (lightest) to "More" (darkest), matching the actual contribution level colors returned by the API.
+> Añade una leyenda de contribuciones debajo de los gráficos que muestre la escala de colores de la paleta de la API. Muestra una fila de cuadrados de colores desde "Less" (el más claro) hasta "More" (el más oscuro), que coincidan con los colores reales de los niveles de contribución devueltos por la API.
 
 ---
 
-## 🏆 Desafío 7: Compartir Resultados
+## 🏆 Desafío 7: Compartir resultados
 
 Permite que los usuarios compartan sus resultados de batalla con un solo clic.
 
@@ -116,7 +116,7 @@ Permite que los usuarios compartan sus resultados de batalla con un solo clic.
 - Muestra un breve mensaje de confirmación "Copied!"
 
 **Sugerencia de prompt:**
-> Add a "📋 Share Results" button that copies a formatted battle summary to the clipboard. The summary should include both usernames, their contribution totals, and who won. Use the Clipboard API and show a brief "Copied to clipboard!" confirmation.
+> Añade un botón "📋 Share Results" que copie un resumen de la batalla con formato al portapapeles. El resumen debe incluir ambos nombres de usuario, sus totales de contribuciones y quién ganó. Usa la Clipboard API y muestra una breve confirmación "Copied to clipboard!".
 
 ---
 
@@ -125,39 +125,39 @@ Permite que los usuarios compartan sus resultados de batalla con un solo clic.
 
 Si quieres explorar más funcionalidades de Copilot CLI después del taller principal:
 
-- Usa `copilot -p "Write a conventional commit message for the current git diff"` para generar una respuesta rápida de un solo disparo que puedes pegar en Git.
+- Usa `copilot -p "Write a conventional commit message for the current git diff"` para generar en una sola ejecución una respuesta sin acciones adicionales que puedas pegar en Git.
 - Ejecuta `/share file` para guardar tu sesión como Markdown para referencia futura.
 - Usa `/session` y `/session plan` para inspeccionar cómo el CLI está rastreando tu trabajo actual.
 <!-- track:cli:end -->
 
-## �� ¡Felicitaciones!
+## 🎊 ¡Enhorabuena!
 
 ¡Has completado el taller **Mona Mayhem: GitHub Battle**! Esto es lo que lograste:
 
-### Lo Que Construiste
+### Lo que construiste
 
 - ✅ Una **aplicación web completa de múltiples páginas** a partir de una especificación de diseño
-- ✅ Una **página de inicio** con temática retro arcade y diseño responsivo
+- ✅ Una **página de inicio** con temática arcade retro y diseño adaptable
 - ✅ Una **arena de batalla** que obtiene y compara datos reales de contribuciones de GitHub
 - ✅ **Gráficos de contribuciones interactivos** con niveles de actividad codificados por colores
 - ✅ **Manejo de errores, estados de carga y mejoras de accesibilidad**
-- ✅ **Diseño responsivo** que funciona en todos los dispositivos
+- ✅ **Diseño adaptable** que funciona en distintos dispositivos
 
-### Lo Que Practicaste
+### Lo que practicaste
 
-| Habilidad | Lo Que Practicaste |
+| Habilidad | Lo que practicaste |
 |-----------|-------------------|
-| **Context Engineering** | Darle a Copilot los archivos, instrucciones y restricciones correctas |
+| **Ingeniería de contexto** | Dar a Copilot los archivos, instrucciones y restricciones adecuados |
 | **Planificación** | Generar y refinar planes de implementación antes de programar |
-| **Codificación Agéntica** | Delegar trabajo en múltiples archivos y múltiples pasos a Copilot |
-| **Iteración de Diseño** | Comenzar desde una dirección visual y refinar hacia un resultado pulido |
-| **Disciplina de Revisión** | Inspeccionar cambios generados por IA antes de hacer commit |
+| **Programación con agentes** | Delegar trabajo de varios pasos y en múltiples archivos a Copilot |
+| **Iteración de diseño** | Partir de una dirección visual y refinarla hasta conseguir un resultado pulido |
+| **Disciplina de revisión** | Inspeccionar cambios generados por IA antes de hacer commit |
 
-### 🚀 Sigue Adelante
+### 🚀 Sigue adelante
 
-- 📺 [Canal de YouTube de VS Code](https://www.youtube.com/@code) — Tips, tutoriales y novedades
+- 📺 [Canal de YouTube de VS Code](https://www.youtube.com/@code) — Consejos, tutoriales y novedades
 - 📖 [Documentación de GitHub Copilot](https://docs.github.com/en/copilot) — Documentación oficial y guías
-- 💻 [Documentación de GitHub Copilot CLI](https://docs.github.com/en/copilot/how-tos/copilot-cli) — Instalación, comandos slash y mejores prácticas
+- 💻 [Documentación de GitHub Copilot CLI](https://docs.github.com/en/copilot/how-tos/copilot-cli) — Instalación, comandos de barra y buenas prácticas
 - 🌟 [Awesome GitHub Copilot](https://github.com/stefanprodan/awesome-github-copilot) — Recursos y ejemplos de la comunidad
 - 🛠️ [Talleres de Copilot Dev Days](https://github.com/github/copilot-dev-days) — Más talleres prácticos como este
 

@@ -1,5 +1,5 @@
 <!-- l10n-sync: source-file="workshop/01-setup.md" -->
-# Parte 1: Configuração e Context Engineering
+# Parte 1: Configuração e Engenharia de Contexto
 
 ---
 
@@ -98,9 +98,9 @@ Use o caminho de instalação que corresponde à sua máquina:
 > ✅ **Agora você tem a pré-visualização do aplicativo em um terminal e o Copilot CLI pronto em outro.**
 <!-- track:cli:end -->
 
-## Seção 2: Context Engineering
+## Seção 2: Engenharia de Contexto
 
-Context Engineering é como você ensina a IA sobre sua base de código. Quanto melhor o contexto, melhor será cada resposta futura.
+Engenharia de contexto é como você ensina a IA sobre sua base de código. Quanto melhor o contexto, melhor será cada resposta futura.
 
 <!-- track:vscode:start -->
 ### Tarefa 1: Gere Instruções do Workspace com /init
@@ -122,18 +122,20 @@ Vamos usar o comando integrado `/init` para gerar um arquivo de instruções do 
 
 **Agente em segundo plano local:**
 
-1. No painel de Chat, clique em **+** → **New background agent**
-2. Digite o prompt:
+1. No painel de Chat, clique em **+** para iniciar um novo chat
+2. Na parte inferior da janela, altere **Local** para **Copilot CLI**
+3. Digite o prompt:
 
-   > "Add linting rules for unused vars and improve code style; fix any errors"
+   > "Adicione regras de linting para variáveis não utilizadas e melhore o estilo do código; corrija quaisquer erros"
 
-3. Quando terminar, **Revise e Aplique** as alterações, depois delete a sessão.
+4. Quando terminar, use **Review and Apply** para revisar e aplicar as alterações e, se desejar, arquive a sessão.
 
 **Agente na nuvem:**
 
-1. Inicie outro agente em segundo plano com:
+1. No painel de Chat, clique em **+** para iniciar um novo chat
+2. Na parte inferior da janela, altere **Local** para **Cloud**
 
-   > "Make the README more engaging as a landing page"
+   > "Torne o README mais atraente como página inicial"
 
 > **Resultado:** Regras de linting adicionadas, erros corrigidos, README melhorado — tudo sem sair do seu editor.
 
@@ -170,7 +172,7 @@ Pratique os controles do CLI que facilitarão os passos posteriores:
 
 1. Execute `/help` para verificar os comandos slash disponíveis.
 2. Use `/model` para inspecionar os modelos disponíveis para você.
-3. Se o Copilot aprendeu muitas aprovações durante a experimentação, reinicie-as com:
+3. Se o Copilot acumulou muitas aprovações durante a experimentação, redefina-as com:
 
    ```
    /reset-allowed-tools
@@ -178,7 +180,7 @@ Pratique os controles do CLI que facilitarão os passos posteriores:
 
 4. Se seu repositório está dentro de um diretório pai maior, use `/add-dir PATH` para ampliar explicitamente o workspace permitido.
 
-> 💡 A documentação do CLI recomenda instruções personalizadas concisas mais permissões de ferramentas explícitas para que o Copilot se mantenha rápido e previsível.
+> 💡 A documentação do CLI recomenda instruções personalizadas concisas e permissões explícitas para ferramentas, para que o Copilot se mantenha rápido e previsível.
 
 ### Tarefa 3: Explore o Projeto pelo Terminal
 
@@ -188,13 +190,13 @@ Experimente estes prompts dentro do Copilot CLI:
 - `@src/pages/api/contributions/[username].ts What is this file for and what needs to be built here?`
 - `@src/pages/index.astro What exists here and what would I need to add to build the battle page?`
 
-Se quiser uma resposta rápida de disparo único fora da sessão interativa, experimente:
+Se quiser uma resposta pontual rápida fora da sessão interativa, experimente:
 
 ```bash
 copilot -p "Summarize the architecture of this repo in 5 bullet points"
 ```
 
-> **Resultado:** Agora você tem instruções, conhecimento de comandos e uma noção de como alimentar arquivos no contexto do Copilot CLI.
+> **Resultado:** Agora você tem instruções, conhece os comandos e sabe como fornecer arquivos como contexto ao Copilot CLI.
 <!-- track:cli:end -->
 
 ## ✅ Parte 1 Completa

@@ -6,7 +6,7 @@
 Você construiu um aplicativo de GitHub Battle totalmente funcional! Agora é hora de ir além com **desafios abertos**.
 
 <!-- track:vscode:start -->
-Use **Agent Mode** para todos estes — descreva o que você quer e deixe o Copilot te ajudar a construir.
+Use **Agent Mode** para todos estes desafios — descreva o que você quer e deixe o Copilot ajudar a construir.
 <!-- track:vscode:end -->
 
 <!-- track:cli:start -->
@@ -26,7 +26,7 @@ Depois que ambos os gráficos de contribuições carregarem, compare os totais e
 - Adicione animação ou confete para mais efeito
 
 **Sugestão de prompt:**
-> After both users' contribution data loads, compare total contributions and display a winner banner. Show "🏆 {username} WINS! 🏆" if one user has more contributions, or "🤝 IT'S A TIE! 🤝" if equal. Make it visually exciting with CSS animations.
+> Depois que os dados de contribuições dos dois usuários carregarem, compare os totais e exiba um banner de vencedor. Mostre "🏆 {username} WINS! 🏆" se um usuário tiver mais contribuições ou "🤝 IT'S A TIE! 🤝" se os totais forem iguais. Torne o visual empolgante com animações CSS.
 
 ---
 
@@ -41,7 +41,7 @@ Calcule e exiba a sequência de contribuições consecutivas mais longa de cada 
 - Destaque quem tem a sequência mais longa
 
 **Sugestão de prompt:**
-> Add a streak counter feature that analyzes each user's contribution data to find their longest consecutive contribution streak. Display "🔥 Longest Streak: X days" for each user below their contribution graph.
+> Adicione um contador de sequência que analise os dados de contribuições de cada usuário para encontrar a sequência mais longa de dias consecutivos com contribuições. Exiba "🔥 Longest Streak: X days" para cada usuário abaixo do respectivo gráfico de contribuições.
 
 ---
 
@@ -56,22 +56,22 @@ Persista os resultados das batalhas para que os usuários possam ver seus confro
 - Adicione um botão "Clear History"
 
 **Sugestão de prompt:**
-> Save battle results to localStorage after each comparison. Add a "Recent Battles" section that displays the last 10 battles with usernames, contribution totals, the winner, and when the battle happened. Include a "Clear History" button.
+> Salve os resultados das batalhas no localStorage após cada comparação. Adicione uma seção "Recent Battles" que exiba as últimas 10 batalhas com nomes de usuário, totais de contribuições, vencedor e quando a batalha aconteceu. Inclua um botão "Clear History".
 
 ---
 
 ## 🏆 Desafio 4: Efeitos Sonoros
 
-Adicione efeitos sonoros retro arcade usando a Web Audio API — sem necessidade de arquivos externos.
+Adicione efeitos sonoros de arcade retrô usando a Web Audio API — sem necessidade de arquivos externos.
 
 **O que construir:**
 - Som de **inserir moeda** quando o botão "Battle!" for clicado
 - Som de **power up** quando os resultados carregarem com sucesso
 - Som de **explosão** quando ocorrer um erro (usuário não encontrado, falha na API)
-- Um botão de alternância para mutar/ativar som
+- Um botão para desativar e ativar o som
 
 **Sugestão de prompt:**
-> Add retro arcade sound effects using the Web Audio API (no audio files). Play a coin insert sound on battle start, a power-up sound when results load, and an explosion sound on errors. Generate the sounds programmatically with oscillators and gain nodes. Include a mute toggle.
+> Adicione efeitos sonoros de arcade retrô usando a Web Audio API (sem arquivos de áudio). Reproduza um som de inserção de moeda no início da batalha, um som de power-up quando os resultados carregarem e um som de explosão nos erros. Gere os sons por programação com osciladores e nós de ganho. Inclua um botão para ativar e desativar o som.
 
 ---
 
@@ -86,7 +86,7 @@ Crie suspense com uma contagem regressiva dramática antes de revelar os resulta
 - Use animações CSS ou temporização com JavaScript
 
 **Sugestão de prompt:**
-> Add an animated battle sequence when the user clicks "Battle!". Show a countdown overlay: "3..." then "2..." then "1..." then "⚡ FIGHT! ⚡" with each step lasting about 1 second. After the countdown, reveal the results with a slide-in animation.
+> Adicione uma sequência de batalha animada quando o usuário clicar em "Battle!". Mostre uma sobreposição de contagem regressiva: "3...", depois "2...", depois "1..." e depois "⚡ FIGHT! ⚡", com cada etapa durando cerca de 1 segundo. Após a contagem regressiva, revele os resultados com uma animação de entrada deslizante.
 
 ---
 
@@ -101,7 +101,7 @@ Adicione uma legenda de escala de cores que corresponda à paleta de cores do gr
 - Posicione-a perto dos gráficos de contribuições
 
 **Sugestão de prompt:**
-> Add a contribution legend below the graphs showing the color scale from the API's color palette. Display a row of colored squares ranging from "Less" (lightest) to "More" (darkest), matching the actual contribution level colors returned by the API.
+> Adicione uma legenda de contribuições abaixo dos gráficos mostrando a escala de cores da paleta da API. Exiba uma linha de quadrados coloridos que vá de "Less" (mais claro) a "More" (mais escuro), correspondendo às cores reais dos níveis de contribuição retornadas pela API.
 
 ---
 
@@ -116,7 +116,7 @@ Permita que os usuários compartilhem seus resultados de batalha com um único c
 - Mostre uma breve mensagem de confirmação "Copied!"
 
 **Sugestão de prompt:**
-> Add a "📋 Share Results" button that copies a formatted battle summary to the clipboard. The summary should include both usernames, their contribution totals, and who won. Use the Clipboard API and show a brief "Copied to clipboard!" confirmation.
+> Adicione um botão "📋 Share Results" que copie um resumo formatado da batalha para a área de transferência. O resumo deve incluir os nomes dos dois usuários, seus totais de contribuições e quem venceu. Use a Clipboard API e mostre uma breve confirmação "Copied to clipboard!".
 
 ---
 
@@ -125,7 +125,7 @@ Permita que os usuários compartilhem seus resultados de batalha com um único c
 
 Se quiser explorar mais funcionalidades do Copilot CLI após o workshop principal:
 
-- Use `copilot -p "Write a conventional commit message for the current git diff"` para gerar uma resposta rápida de disparo único que pode colar no Git.
+- Use `copilot -p "Write a conventional commit message for the current git diff"` para gerar uma resposta pontual, sem executar ações, que você pode colar no Git.
 - Execute `/share file` para salvar sua sessão como Markdown para referência futura.
 - Use `/session` e `/session plan` para inspecionar como o CLI está rastreando seu trabalho atual.
 <!-- track:cli:end -->
@@ -137,7 +137,7 @@ Você completou o workshop **Mona Mayhem: GitHub Battle**! Aqui está o que voc�
 ### O Que Você Construiu
 
 - ✅ Um **aplicativo web completo de múltiplas páginas** a partir de uma especificação de design
-- ✅ Uma **página inicial** com temática retro arcade e layout responsivo
+- ✅ Uma **página inicial** com temática de arcade retrô e layout responsivo
 - ✅ Uma **arena de batalha** que busca e compara dados reais de contribuições do GitHub
 - ✅ **Gráficos de contribuições interativos** com níveis de atividade codificados por cores
 - ✅ **Tratamento de erros, estados de carregamento e melhorias de acessibilidade**
@@ -147,7 +147,7 @@ Você completou o workshop **Mona Mayhem: GitHub Battle**! Aqui está o que voc�
 
 | Habilidade | O Que Você Praticou |
 |------------|---------------------|
-| **Context Engineering** | Dar ao Copilot os arquivos, instruções e restrições corretas |
+| **Engenharia de Contexto** | Dar ao Copilot os arquivos, instruções e restrições corretas |
 | **Planejamento** | Gerar e refinar planos de implementação antes de programar |
 | **Codificação Agêntica** | Delegar trabalho em múltiplos arquivos e múltiplas etapas ao Copilot |
 | **Iteração de Design** | Começar de uma direção visual e refinar até um resultado polido |

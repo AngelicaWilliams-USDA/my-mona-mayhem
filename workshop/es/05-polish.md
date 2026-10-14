@@ -1,15 +1,16 @@
 <!-- l10n-sync: source-file="workshop/05-polish.md" -->
-# Parte 5: Pulido y Trabajo Paralelo
+# Parte 5: Pulido y trabajo paralelo
 
 ---
 
-Ahora que la aplicación funciona y se ve genial, es hora de pulir. Esta parte trata sobre dividir el trabajo para que puedas mejorar la responsividad, el manejo de errores y la calidad sin hacer todo en un solo bucle serial.
+Ahora que la aplicación funciona y tiene un aspecto estupendo, es hora de pulirla. En esta parte dividirás el trabajo para mejorar la adaptación a distintos tamaños de pantalla, la gestión de errores y la calidad sin hacerlo todo en un único ciclo secuencial.
 
 <!-- track:vscode:start -->
-## Tarea 1: Agente en Segundo Plano para Diseño Responsivo
+## Tarea 1: Agente en segundo plano para diseño adaptable
 
-1. En el panel de Chat, haz clic en **+** → **New background agent**.
-2. Ingresa este prompt:
+1. En el panel de Chat, haz clic en **+** para abrir un chat nuevo
+2. En la parte inferior de la ventana, cambia **Local** a **Copilot CLI**
+3. Introduce este prompt:
 
    ```
    Add responsive CSS media queries: at 1024px switch comparison to single column,
@@ -18,13 +19,13 @@ Ahora que la aplicación funciona y se ve genial, es hora de pulir. Esta parte t
    Enter triggers battle, and focus states are visible.
    ```
 
-3. Déjalo ejecutarse de forma independiente — no necesitas observarlo.
-4. Cuando termine, **Revisa** los cambios y haz clic en **Apply**.
+4. Déjalo ejecutarse de forma independiente — no necesitas observarlo.
+5. Cuando termine, **revisa** los cambios y haz clic en **Apply**.
 
-## Tarea 2: Agente en Segundo Plano para UX de Errores
+## Tarea 2: Agente en segundo plano para la UX de errores
 
 1. Inicia otro agente en segundo plano.
-2. Ingresa este prompt:
+2. Introduce este prompt:
 
    ```
    Improve the error experience: add a shake animation for errors, styled error
@@ -35,10 +36,11 @@ Ahora que la aplicación funciona y se ve genial, es hora de pulir. Esta parte t
 
 3. Revisa los cambios cuando el agente termine y haz clic en **Apply**.
 
-## Tarea 3: Agente en la Nube para Variaciones (Opcional)
+## Tarea 3: Agente en la nube para variaciones (opcional)
 
-1. Haz clic en **+** → **New cloud agent**.
-2. Ingresa este prompt:
+1. En el panel de Chat, haz clic en **+** para abrir un chat nuevo
+2. En la parte inferior de la ventana, cambia **Local** a **Cloud**
+3. Introduce este prompt:
 
    ```
    Create an alternative color theme for the battle page — keep the retro arcade
@@ -46,14 +48,14 @@ Ahora que la aplicación funciona y se ve genial, es hora de pulir. Esta parte t
    Create it as a CSS custom property theme that could be toggled.
    ```
 
-3. Revisa las **sesiones de agentes** para monitorear el progreso.
-4. Revisa la variación de diseño en el PR que el agente en la nube crea.
+4. Revisa las **sesiones de agentes** para seguir el progreso.
+5. Revisa la variación de diseño en el PR que crea el agente en la nube.
 
-## Tarea 4: Verifica Todo
+## Tarea 4: Verifica todo
 <!-- track:vscode:end -->
 
 <!-- track:cli:start -->
-## Tarea 1: Divide el Trabajo con `/fleet`
+## Tarea 1: Divide el trabajo con `/fleet`
 
 En Copilot CLI, usa `/fleet` para dividir el trabajo entre subagentes paralelos, luego revisa el resultado combinado:
 
@@ -66,7 +68,7 @@ En Copilot CLI, usa `/fleet` para dividir el trabajo entre subagentes paralelos,
 
 Deja que el CLI orqueste el trabajo, luego inspecciona el resultado combinado con `/diff` antes de aprobar cualquier cosa.
 
-## Tarea 2: Delega una Variación (Opcional)
+## Tarea 2: Delega una variación (opcional)
 
 Si quieres probar un flujo de trabajo asíncrono en la nube, delega una variación de diseño:
 
@@ -76,7 +78,7 @@ Si quieres probar un flujo de trabajo asíncrono en la nube, delega una variaci�
 
 Esa tarea delegada debería crear un pull request que puedes revisar por separado mientras sigues trabajando localmente.
 
-## Tarea 3: Ejecuta una Revisión Agéntica
+## Tarea 3: Ejecuta una revisión con agentes
 
 Antes de terminar, pide a Copilot CLI una pasada de revisión:
 
@@ -86,21 +88,21 @@ Antes de terminar, pide a Copilot CLI una pasada de revisión:
 
 Revisa los hallazgos, corrige lo que consideres necesario, luego ejecuta `/diff` nuevamente para tener claro qué cambió.
 
-## Tarea 4: Verifica Todo
+## Tarea 4: Verifica todo
 <!-- track:cli:end -->
 
 > **⚠️ ¿No ves los cambios?** Si alguna de las actualizaciones de pulido no aparece, detén el servidor de desarrollo (`Ctrl+C`) y reinicia con `npm run dev`, luego haz una recarga forzada (`Ctrl+Shift+R`) en tu navegador.
 
 Ejecuta estos escenarios de prueba para asegurarte de que todo funciona:
 
-| Prueba | Resultado Esperado |
+| Prueba | Resultado esperado |
 |--------|-------------------|
 | Campos vacíos, clic en Battle | Error con estilo y animación de sacudida |
 | Nombres de usuario válidos | Gráficos de contribuciones mostrados |
 | Nombre de usuario inválido | Error de la API con estilo retro |
-| Tecla Enter en el input | Activa la batalla |
-| Ancho móvil | Diseño responsivo de una sola columna |
-| Pasar el cursor sobre cuadros de contribución | Tooltip con fecha y cantidad |
+| Tecla Enter en el campo de entrada | Activa la batalla |
+| Ancho móvil | Diseño adaptable de una sola columna |
+| Pasar el cursor sobre cuadrados de contribuciones | Descripción emergente con fecha y cantidad |
 
 Compila para producción y confirma que no hay errores:
 
@@ -112,7 +114,7 @@ Una vez que todo se vea bien, haz commit de tu código funcional.
 
 ---
 
-## ✅ ¡Parte 5 Completa!
+## ✅ ¡Parte 5 completada!
 
 **Lo que aprendiste:**
 
